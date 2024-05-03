@@ -1,0 +1,17 @@
+nav ul {
+    flex-direction: row; /* Display links horizontally */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add spacing between links */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    padding: 30px;
+}
