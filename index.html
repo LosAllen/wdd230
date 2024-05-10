@@ -8,12 +8,13 @@
     <title>Lincoln Allen - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 2500px)">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 2000px)">
 </head>
 <body>
     <header>
         <img src="images/profile.jpg" alt="Lincoln Allen">
         <h1>Lincoln Allen</h1>
+        <button id="menu-toggle">&#9776;</button> <!-- Hamburger button -->
     </header>
     <nav>
         <ul>
@@ -37,10 +38,12 @@
             
         </section>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.0936131055224!2d-94.55958065951845!3d39.26166439775919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c057888bc7d3ed%3A0xe3ab843e19aa2928!2s1501%20NE%2092nd%20Terrace%2C%20Kansas%20City%2C%20MO%2064155!5e0!3m2!1sen!2sus!4v1715309334618!5m2!1sen!2sus" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy; <span id="currentYear"></span> Lincoln Allen, United States</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script> <!-- Ensure this script is included -->
 </body>
 </html>
