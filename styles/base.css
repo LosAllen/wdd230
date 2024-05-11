@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #2a2a2a;
 }
 
 header {
@@ -16,13 +16,11 @@ header img {
     border-radius: 50%;
 }
 
-
-
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #949494;
 }
 
 .card {
@@ -33,7 +31,7 @@ main {
 
 footer {
     background-color: #166bdb;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 10px;
 }
