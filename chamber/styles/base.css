@@ -126,8 +126,8 @@ section {
     margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
-    color: #fff;
-    background-color: #3498db; 
+    color: black;
+    background-color: #87CEEB; 
 }
 
 body.dark-mode {
@@ -136,5 +136,13 @@ body.dark-mode {
 }
 
 .dark-mode section {
-    background-color: #87CEEB;
+    background-color: #166194;
+    color: #f4f4f4;
+}
+
+.news-banner.dark-mode {
+    background-color: #444444;
+    color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
 }
