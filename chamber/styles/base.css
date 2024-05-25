@@ -140,7 +140,7 @@ body.dark-mode {
     color: #f4f4f4;
 }
 
-.news-banner.dark-mode {
+ .dark-mode .news-banner{
     background-color: #444444;
     color: #f4f4f4;
     padding: 20px;
