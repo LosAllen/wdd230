@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development. Lincoln Allen's course assignment portal">
-    <meta name="author" content="Lincoln Allen">
     <title>Lincoln Allen - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 2000px)">
+    <link rel="stylesheet/less" href="styles/larger.less" media="screen and (min-width: 2000px)">
 </head>
 <body>
     <header>
@@ -16,15 +14,30 @@
         <h1>Lincoln Allen</h1>
         <button id="menu-toggle">&#9776;</button>
     </header>
+    
+
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="lesson03/chamber_site_plan.html">Site Plan</a></li>
-            <li><a href="chamber/chamber.html">Chamber</a></li>
+            <li><a href="lesson03/site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
         </ul>
     </nav>
+
+    <div class="banner">
+        <picture>
+            <source srcset="images/temple-mobile.webp" media="(max-width: 600px)">
+            <source srcset="images/temple-large.webp" media="(min-width: 601px) and (max-width: 1060px)">
+            <img src="images/temple-mobile.webp" alt="Latter-day Temple">
+        </picture>
+        <div class="overlay">
+            <p>Kansas City Temple</p>
+        </div>
+    </div>
+
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -33,17 +46,14 @@
                 <li><a href="lesson02/design-principles.html">Design Principles</a></li>
             </ul>
         </section>
-        <section class="card">
-            <h3>Information</h3>
-            
-        </section>
     </main>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.0936131055224!2d-94.55958065951845!3d39.26166439775919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c057888bc7d3ed%3A0xe3ab843e19aa2928!2s1501%20NE%2092nd%20Terrace%2C%20Kansas%20City%2C%20MO%2064155!5e0!3m2!1sen!2sus!4v1715309334618!5m2!1sen!2sus" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy; <span id="currentYear"></span> Lincoln Allen, United States</p>
-        <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburger.js"></script> <!-- Ensure this script is included -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/less.js"></script>
 </body>
 </html>
+
