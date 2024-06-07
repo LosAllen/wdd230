@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln Allen - Discover</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+    <header>
+        <img src="../images/profile.jpg" alt="Lincoln Allen">
+        <h1>Lincoln Allen</h1>
+        <button id="menu-toggle">&#9776;</button>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../lesson03/site-plan.html">Site Plan</a></li>
+            <li><a href="../chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <picture>
+            <source srcset="../images/temple-mobile.webp" media="(max-width: 600px)">
+            <source srcset="../images/temple-large.webp" media="(min-width: 601px) and (max-width: 1060px)">
+            <img src="../images/temple-mobile.webp" alt="Latter-day Temple">
+        </picture>
+        <div class="overlay">
+            <p>Kansas City Temple</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="sidebar">
+            <section id="visit-message" class="card">
+                <!-- Visit message will be inserted here by JavaScript -->
+            </section>
+            <section class="card">
+                <h3>Local Events</h3>
+            </section>
+            <section class="card">
+                <h3>Farmers Market</h3>
+                <p>Join us every Saturday for fresh produce, local crafts, and live music.</p>
+                <p><strong>Date:</strong> Every Saturday</p>
+                <p><strong>Time:</strong> 8:00 AM - 1:00 PM</p>
+                <p><strong>Location:</strong> Downtown Plaza</p>
+            </section>
+            <section class="card">
+                <h3>Concert in the Park</h3>
+                <p>Enjoy an evening of live music from local bands.</p>
+                <p><strong>Date:</strong> July 15, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+                <p><strong>Location:</strong> Central Park</p>
+            </section>
+            <section class="card">
+                <h3>Art Walk</h3>
+                <p>Explore the local art scene with gallery openings and street performances.</p>
+                <p><strong>Date:</strong> August 1, 2024</p>
+                <p><strong>Time:</strong> 5:00 PM - 9:00 PM</p>
+                <p><strong>Location:</strong> Arts District</p>
+            </section>
+            <section class="card">
+                <h3>Food Truck Festival</h3>
+                <p>Taste the best street food from a variety of food trucks.</p>
+                <p><strong>Date:</strong> September 10, 2024</p>
+                <p><strong>Time:</strong> 11:00 AM - 6:00 PM</p>
+                <p><strong>Location:</strong> Riverside Park</p>
+            </section>
+            <section class="card">
+                <h3>Outdoor Movie Night</h3>
+                <p>Bring your family and enjoy a movie under the stars.</p>
+                <p><strong>Date:</strong> Every Friday in July</p>
+                <p><strong>Time:</strong> 8:00 PM - 10:00 PM</p>
+                <p><strong>Location:</strong> Community Center Lawn</p>
+            </section>
+        </div>
+        <div class="content">
+            <h2>Local Photos of Interest</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/farm.jpg" alt="Photo 1" loading="lazy">
+                    <figcaption>Farmers Market</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/concert.jpg" alt="Photo 2" loading="lazy">
+                    <figcaption>Concert</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/art.jpg" alt="Photo 3" loading="lazy">
+                    <figcaption>Art Walk</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/foodtruck.jpg" alt="Photo 4" loading="lazy">
+                    <figcaption>Food Truck Festival</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/outdoor.jpg" alt="Photo 5" loading="lazy">
+                    <figcaption>Outdoor Movie Night</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Lincoln Allen, United States</p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+    <script src="../scripts/visit.js"></script>
+    <script src="../scripts/visitMessage.js"></script>
+</body>
+</html>
