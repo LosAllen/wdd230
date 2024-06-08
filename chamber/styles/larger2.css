@@ -1,0 +1,21 @@
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 40px;
+    }
+    
+    nav ul li {
+        margin-right: 40px;
+    }
+    
+    .news-banner {
+        padding: 40px;
+    }
+    
+    main {
+        padding: 40px;
+    }
+    
+    footer {
+        padding: 40px;
+    }
+}
