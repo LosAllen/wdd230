@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln Allen - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet/less" href="styles/larger.less" media="screen and (min-width: 2000px)">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Lincoln Allen">
+        <h1>Lincoln Allen</h1>
+        <button id="menu-toggle">&#9776;</button>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name:
+                <input type="text" id="first-name" name="first-name" required>
+            </label>
+            <label for="last-name">Last Name:
+                <input type="text" id="last-name" name="last-name" required>
+            </label>
+            <label for="title">Title/Position:
+                <input type="text" id="title" name="title">
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </label>
+            <label for="phone">Mobile Phone:
+                <input type="tel" id="phone" name="phone" required>
+            </label>
+            <label for="organization">Organization:
+                <input type="text" id="organization" name="organization" required>
+            </label>
+            <label for="membership-level">Membership Level:
+                <select id="membership-level" name="membership-level">
+                    <option value="NP">NP Membership (Non-profit, no fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">Organization Description:
+                <textarea id="description" name="description"></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit">Submit</button>
+        </form>
+
+        <section class="sidebar">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations with no fee. Benefits include event participation and basic training sessions.</p>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <p>Includes event participation, basic training sessions, and a monthly newsletter. Annual fee: $100.</p>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <p>All benefits of Bronze, plus advanced training sessions, and a quarterly spotlight in our newsletter. Annual fee: $250.</p>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <p>All benefits of Silver, plus premium event discounts, and a homepage spotlight. Annual fee: $500.</p>
+            </div>
+        </section>
+        <form method="get" action="thankyou.html">
+            <!-- form fields -->
+        </form>
+        </main>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Lincoln Allen, United States</p>
+    </footer>
+</body>
+</html>
