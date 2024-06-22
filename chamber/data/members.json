@@ -1,0 +1,65 @@
+[
+    {
+        "name": "ABC Corporation",
+        "address": "123 Main St, Kansas City, MO",
+        "phone": "(555) 123-4567",
+        "website": "https://www.abccorp.com",
+        "image": "abc-corp.png",
+        "membershipLevel": "Gold",
+        "description": "Leading provider of business solutions."
+    },
+    {
+        "name": "XYZ Bank",
+        "address": "456 Elm St, Kansas City, MO",
+        "phone": "(555) 987-6543",
+        "website": "https://www.xyzbank.com",
+        "image": "xyz-bank.png",
+        "membershipLevel": "Silver",
+        "description": "Your trusted financial partner."
+    },
+    {
+        "name": "Smith & Associates",
+        "address": "789 Oak St, Kansas City, MO",
+        "phone": "(555) 345-6789",
+        "website": "https://www.smithassociates.com",
+        "image": "smith-associates.png",
+        "membershipLevel": "Bronze",
+        "description": "Expert legal services for all your needs."
+    },
+    {
+        "name": "Doe Industries",
+        "address": "101 Pine St, Kansas City, MO",
+        "phone": "(555) 234-5678",
+        "website": "https://www.doeindustries.com",
+        "image": "doe-industries.png",
+        "membershipLevel": "Platinum",
+        "description": "Innovative manufacturing solutions."
+    },
+    {
+        "name": "Creative Solutions",
+        "address": "202 Birch St, Kansas City, MO",
+        "phone": "(555) 456-7890",
+        "website": "https://www.creativesolutions.com",
+        "image": "creative-solutions.png",
+        "membershipLevel": "Gold",
+        "description": "Creative marketing and advertising services."
+    },
+    {
+        "name": "Tech Innovators",
+        "address": "303 Cedar St, Kansas City, MO",
+        "phone": "(555) 567-8901",
+        "website": "https://www.techinnovators.com",
+        "image": "tech-innovators.png",
+        "membershipLevel": "Silver",
+        "description": "Cutting-edge technology solutions."
+    },
+    {
+        "name": "Green Energy Corp",
+        "address": "404 Maple St, Kansas City, MO",
+        "phone": "(555) 678-9012",
+        "website": "https://www.greenenergy.com",
+        "image": "green-energy.png",
+        "membershipLevel": "Bronze",
+        "description": "Sustainable energy solutions for a better future."
+    }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kansas City Chamber of Commerce Directory</title>
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/medium2.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/larger2.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Kansas City Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="toggle-view">
+            <button id="toggleButton">Toggle View</button>
+        </section>
+        <section id="directory"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kansas City Chamber of Commerce. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
