@@ -1,8 +1,10 @@
+/* Reset and common styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
+/* Dark mode toggle switch */
 .switch {
     position: fixed;
     top: 20px;
@@ -44,6 +46,7 @@ body, h1, h2, h3, p, ul, li {
     transform: translateX(20px);
 }
 
+/* General body and container styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -57,6 +60,7 @@ body {
     padding: 0 20px;
 }
 
+/* Header styles */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -78,25 +82,24 @@ body {
     gap: 15px;
 }
 
-.header-container nav ul li {
-    margin: 0;
-}
-
 .header-container nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* News banner */
 .news-banner {
     background-color: #f4f4f4;
     padding: 20px;
     margin-bottom: 20px;
 }
 
+/* Main content styles */
 main {
     padding: 20px;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -125,12 +128,14 @@ footer address {
     font-style: normal;
 }
 
+/* Grid layout */
 #grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
+/* Section styles */
 section {
     margin-top: 10px;
     padding: 20px;
@@ -139,6 +144,7 @@ section {
     background-color: #87CEEB; 
 }
 
+/* Dark mode styles */
 body.dark-mode {
     background-color: #111; 
     color: #ddd;
@@ -149,39 +155,36 @@ body.dark-mode {
     color: #f4f4f4;
 }
 
- .dark-mode .news-banner{
+.dark-mode .news-banner {
     background-color: #444444;
     color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
+/* Hero section */
 #hero {
     position: relative;
     text-align: center;
     color: white;
+    max-height: 600px; /* Set max height */
+    overflow: hidden;
 }
 
 .hero-image-container {
     position: relative;
     width: 100%;
-    height: 0;
-    padding-top: 56.25%; 
+    height: 100%;
     overflow: hidden;
 }
 
 .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 .hero-button {
     position: absolute;
-    top: 50%;
+    top: 40%; /* Adjust position to prevent overlap */
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
@@ -189,6 +192,7 @@ body.dark-mode {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    z-index: 2;
 }
 
 .overlay {
@@ -199,26 +203,15 @@ body.dark-mode {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
-    font-size: 18px;
-    text-align: center;
+    z-index: 1;
 }
 
-.small-overlay {
-    font-size: 12px;
-}
-
-.medium-overlay {
-    font-size: 18px;
-}
-
-.large-overlay {
-    font-size: 24px;
-}
-
+/* Card container */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    word-wrap: break-word;
 }
 
 .card {
@@ -240,10 +233,15 @@ body.dark-mode {
     margin: 10px 0;
 }
 
-.card p {
-    margin: 5px 0;
+.card p a {
+    font-size: 1em;
 }
 
+.card p {
+    font-size: 1em;
+}
+
+/* List container */
 .list-container {
     display: block;
 }
@@ -262,12 +260,7 @@ body.dark-mode {
     margin: 5px 0;
 }
 
-#toggleButton {
-    margin: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
+/* Meeting banner */
 .meeting-banner {
     background-color: #ffcc00;
     color: #333;
@@ -287,12 +280,16 @@ body.dark-mode {
     font-weight: bold;
 }
 
+/* Events and weather section */
 #events-weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1300px) {
     .hero-image-container {
         height: 300px;
@@ -300,7 +297,6 @@ body.dark-mode {
 
     .hero-image {
         content: url(images/hero-small.jpg);
-        height: 300px;
     }
 
     .small-overlay {
@@ -313,22 +309,17 @@ body.dark-mode {
     }
 
     .hero-button {
-        top: calc(50% - 20px); /* Adjust for smaller screens */
+        top: 35%; /* Adjust position for smaller screens */
     }
 }
 
 @media (min-width: 1301px) and (max-width: 2099px) {
-    #hero {
-        height: 500px;
-    }
-
     .hero-image-container {
         height: 500px;
     }
 
     .hero-image {
         content: url(images/hero-medium.jpg);
-        height: 500px;
     }
 
     .medium-overlay {
@@ -341,15 +332,11 @@ body.dark-mode {
     }
 
     .hero-button {
-        top: calc(50% - 20px); /* Adjust for medium screens */
+        top: 40%; /* Adjust position for medium screens */
     }
 }
 
 @media (min-width: 2100px) {
-    #hero {
-        height: 800px;
-    }
-
     .hero-image-container {
         height: 800px;
     }
@@ -369,6 +356,6 @@ body.dark-mode {
     }
 
     .hero-button {
-        top: calc(50% - 20px); /* Adjust for large screens */
+        top: 45%; /* Adjust position for large screens */
     }
 }
