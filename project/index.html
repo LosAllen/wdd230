@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Scoots Logo" class="logo">
+        <h1>Welcome to Scoots</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Explore Cozumel with our rentals!</h2>
+            <button onclick="window.location.href='reservations.html'">Make a Reservation</button>
+        </section>
+        <section id="summary">
+            <h3>Our Rentals</h3>
+            <div class="rental">
+                <p>Honda Motor Scooters</p>
+                <img src="images/pexels-loifotos-2044873.jpg" alt="Scooter">
+            </div>
+            <div class="rental">
+                <p>Honda Pioneer ATVs</p>
+                <img src="images/pexels-tima-miroshnichenko-5976872.jpg" alt="ATV">
+            </div>
+            <div class="rental">
+                <p>Jeep Wranglers</p>
+                <img src="images/pexels-styves-exantus-7162424-6007993.jpg" alt="Jeep">
+            </div>
+        </section>
+        <section id="weather">
+            <h3>Current Weather</h3>
+            <div id="weather-card">
+                <p id="current-weather"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:info@scoots.com">info@scoots.com</a></p>
+        <p>&copy; 2024 Scoots</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/scoots" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/scoots" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

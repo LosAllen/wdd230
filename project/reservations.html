@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Reservations</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Scoots Logo" class="logo">
+        <h1>Make a Reservation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        <div id="form-container">
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door">Jeep Wrangler - 4 door</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </select>
+                <label for="date">Rental Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="period">Rental Period:</label>
+                <select id="period" name="period" required>
+                    <option value="Half Day">Half Day</option>
+                    <option value="Full Day">Full Day</option>
+                </select>
+                <label for="comments">Special Accommodations/Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:info@scoots.com">info@scoots.com</a></p>
+        <p>&copy; 2024 Scoots</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/scoots" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/scoots" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <script src="scripts/reservations.js"></script>
+</body>
+</html>
